@@ -40,7 +40,7 @@ jobs:
           cp aria2c-macos-${{ matrix.architecture }}.tar.gz ${{ github.workspace }}/
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: aria2c-macos-${{ matrix.architecture }}
           path: aria2c-macos-${{ matrix.architecture }}.tar.gz
@@ -73,7 +73,7 @@ jobs:
           cp aria2c-macos-${{ matrix.architecture }}.tar.gz ${{ github.workspace }}/
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: aria2c-macos-${{ matrix.architecture }}
           path: aria2c-macos-${{ matrix.architecture }}.tar.gz
